@@ -143,7 +143,7 @@ nav {
 #about {
     max-width: 900px;       
     margin: 0 auto;    
-    padding: 6rem 1.5rem 18rem 1.5rem;
+    padding: 6rem 1.5rem 10rem 1.5rem;
 }
 
 #about__section {
@@ -164,6 +164,11 @@ nav {
 
 #about__section__text {
     flex: 1 1 300px;
+    ;
+}
+
+#about__section__text p {
+    padding: 0.5rem;
 }
 
 #about__section__photo {
@@ -171,8 +176,8 @@ nav {
     justify-content: center;
 }
 .profile-pic:hover {
-    transform: scale(1.05); /* slightly enlarge */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* subtle depth */
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* EXPERIENCE */
@@ -220,16 +225,64 @@ nav {
     padding-top: 1rem;
 }
 
+.experience__text__about p {
+    padding: 0.5rem 0 0.5rem 0;
+}
 .experience__text__focus ul {
     column-count: 2;
     column-gap: 4rem;
     list-style-position: inside;
+    padding-top: 0.5rem;
 }
+
 /* PROJECTS */
 #projects {
     max-width: 900px;       
     margin: 0 auto;    
-    padding: 6rem 1.5rem 18rem 1.5rem;
+    padding: 6rem 1.5rem 10rem 1.5rem;
+}
+
+.certification__block {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.certification__block__certificate img {
+    max-width: 180px;
+    height: auto;
+    border-radius: 4px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.certification__block__certificate img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.certification__block__content {
+    flex: 1;
+    color: var(--text-primary);
+}
+
+.certification__block__title a {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.certification__block__company,
+.certification__block__date {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.experience__text__heading a {
+    text-decoration: none;
 }
 
 #side_nav_left {
@@ -302,7 +355,7 @@ nav {
 }
 
 .contact__main {
-    max-width: 700px;          
+    max-width: 800px;          
     margin: 0 auto;            
     text-align: center;        
     padding: 1rem;             
